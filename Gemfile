@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'json'
 
+gem 'bootstrap-sass', '2.0.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -22,6 +24,16 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
+#Nii Amon code
+group :development, :test do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
